@@ -1,1 +1,1 @@
-# Nik Shopify Theme
+
