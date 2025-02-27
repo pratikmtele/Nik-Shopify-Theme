@@ -115,11 +115,24 @@ body {
   font-weight: normal;
   position: absolute;
   width: 100%;
+  max-height: max-content;
   list-style-type: none;
+  display: none;
+  padding-top: 20px;
+  background-color: white;
+  z-index: 999;
+}
+
+.menu-items:hover>.dropdown-menu {
+  display: block;
 }
 
 .dropdown-menu .dropdown-items {
-  color: black;
+  padding: 5px 0px;
+}
+
+.dropdown-menu .dropdown-items:hover>.dropdown-menu {
+  display: block;
 }
 
 .dropdown-menu .dropdown-item {
@@ -128,6 +141,8 @@ body {
   transition: all 0.2s ease-in-out;
   margin-left: -35px;
   width: 100%;
+  /* border: 1px solid black; */
+  padding: 10px;
 }
 
 .dropdown-menu .dropdown-item:hover {
