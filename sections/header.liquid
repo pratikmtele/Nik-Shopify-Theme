@@ -12,7 +12,18 @@
     <ul>
       {% for link in linklists['main-menu'].links %}
         <li>
-          {{ link.title | link_to: link.url }}
+          <a href="{{ link.url }}">{{ link.title }}</a>
+
+          {% comment %} Dropdown menus {% endcomment %}
+          {% if link.links.size > 0 %}
+            <ul class="dropdown">
+              {% for sublink in link.links %}
+                <li>
+                  {{ sublink.title | link_to: sublink.url }}
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
         </li>
       {% endfor %}
     </ul>

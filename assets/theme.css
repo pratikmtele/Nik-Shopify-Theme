@@ -105,6 +105,12 @@ body {
   margin-bottom: 10px;
 }
 
+.header-right-section ul li .dropdown {
+  font-size: 14px;
+  font-weight: normal;
+  background-color: black;
+}
+
 /**
 *
 * BANNER
