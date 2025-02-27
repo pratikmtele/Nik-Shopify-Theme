@@ -1,0 +1,126 @@
+body {
+  background-color: "{{ settings.bg }}";
+  padding: 0;
+  margin: 0;
+}
+
+/**
+ * --------------------------------------------------------------------
+ * ANNOUNCEMENT BAR
+ * --------------------------------------------------------------------
+ */
+
+.announcement-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.right-section {
+  display: flex;
+  gap: 15px;
+  padding-right: 15px;
+}
+
+.right-section li {
+  list-style-type: none;
+}
+
+.right-section li a {
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.1s ease-in-out;
+}
+
+.right-section li a:hover {
+  opacity: 70%;
+}
+
+.notfound {
+  background-color: rgb(226, 226, 226);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/**
+ * --------------------------------------------------------------------
+ * HEADER
+ * --------------------------------------------------------------------
+ */
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left-section {
+  margin-left: 15px;
+}
+
+.header-middle-section ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  color: black;
+}
+
+.header-middle-section ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  border-bottom: 2px solid white;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+}
+
+.header-middle-section ul li a:hover {
+  border-bottom: 2px solid black;
+}
+
+.header-right-section {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-right-section form .search-bar {
+  padding: 8px;
+  outline: none;
+  border-radius: 50px;
+  margin-top: 10px;
+  background-color: #f4f4f4;
+}
+
+.header-right-section a {
+  margin-bottom: 10px;
+}
+
+/**
+*
+* BANNER
+*
+**/
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#banner a {
+  margin-bottom: 15px;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  color: black;
+}

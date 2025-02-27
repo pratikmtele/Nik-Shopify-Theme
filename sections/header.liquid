@@ -1,0 +1,58 @@
+<header id="header">
+  <div class="header-left-section">
+    {% if section.settings.logo != blank %}
+      <img width="50" height="50" src="{{ section.settings.logo | image_url }}">
+    {% else %}
+      <img width="50" height="50" src="{{ "nike.png" | asset_url}}">
+    {% endif %}
+  </div>
+
+  <!-- middle nav items -->
+  <nav class="header-middle-section">
+    <ul>
+      {% for link in linklists['main-menu'].links %}
+        <li>
+          {{ link.title | link_to: link.url }}
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <!-- right nav items -->
+  <div class="header-right-section">
+    <form action="/search">
+      <input placeholder="Search" type="search" class="search-bar">
+    </form>
+
+    <a href="/">
+      {% if section.settings.cart_icon != blank %}
+        <img width="40" height="40" src="{{ section.settings.cart_icon | image_url: width: 40, height: 40 }}">
+      {% else %}
+        <img width="40" height="40" src="{{ 'd.png' | asset_url }}">
+      {% endif %}
+    </a>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Pick Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "cart_icon",
+      "label": "Pick Cart Icon"
+    }
+  ],
+  "presets": [
+    {
+      "name": "header"
+    }
+  ]
+}
+{% endschema %}

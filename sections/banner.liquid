@@ -1,0 +1,40 @@
+<section id="banner">
+  <p>Hello This is Banner Text</p>
+  <a href="#">Shop All Our New Markdowns</a>
+</section>
+
+<style>
+  #banner {
+     background-color: {{ section.settings.banner_background }};
+     padding: {{ section.settings.banner_padding }}px;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "banner",
+  "settings": [
+    {
+      "type": "color",
+      "id": "banner_background",
+      "label": "Pick Background",
+      "default": "#f4F4F4"
+    },
+    {
+      "type": "range",
+      "max": 100,
+      "min": 1,
+      "step": 1,
+      "label": "Banner Padding",
+      "id": "banner_padding",
+      "default": 1,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "banner"
+    }
+  ]
+}
+{% endschema %}
