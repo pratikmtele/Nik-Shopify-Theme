@@ -12,8 +12,11 @@
     "banner": {
       "type": "banner",
       "settings": {
-        "banner_background": "#f4F4F4",
-        "banner_padding": 1
+        "banner_background": "#f4f4f4",
+        "banner_padding": 1,
+        "banner_heading": "Sale: Up To 40% Off",
+        "banner_subheading": "Shop All Our New Markdowns",
+        "banner_subheading_url": "/"
       }
     }
   },
