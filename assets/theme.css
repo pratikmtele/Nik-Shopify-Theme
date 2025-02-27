@@ -2,6 +2,7 @@ body {
   background-color: "{{ settings.bg }}";
   padding: 0;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 /**
@@ -67,14 +68,18 @@ body {
   margin-left: 15px;
 }
 
-.header-middle-section ul {
+.header-middle-section .menus {
   display: flex;
   gap: 30px;
   list-style-type: none;
   color: black;
 }
 
-.header-middle-section ul li a {
+.header-middle-section .menu-items {
+  position: relative;
+}
+
+.header-middle-section .menu-item {
   color: black;
   text-decoration: none;
   font-size: 18px;
@@ -83,7 +88,7 @@ body {
   font-weight: 600;
 }
 
-.header-middle-section ul li a:hover {
+.header-middle-section .menu-item:hover {
   border-bottom: 2px solid black;
 }
 
@@ -105,10 +110,28 @@ body {
   margin-bottom: 10px;
 }
 
-.header-right-section ul li .dropdown {
+.dropdown-menu {
   font-size: 14px;
   font-weight: normal;
-  background-color: black;
+  position: absolute;
+  width: 100%;
+  list-style-type: none;
+}
+
+.dropdown-menu .dropdown-items {
+  color: black;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #707072;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  margin-left: -35px;
+  width: 100%;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: #000000;
 }
 
 /**
