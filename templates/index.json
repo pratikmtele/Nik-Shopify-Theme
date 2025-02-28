@@ -16,14 +16,14 @@
                 "banner_padding": 1
             }
         },
-        "video": {
-            "type": "video",
+        "image": {
+            "type": "image",
             "settings": {
             }
         }
     },
     "order": [
         "banner",
-        "video"
+        "image"
     ]
 }
