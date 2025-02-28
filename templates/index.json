@@ -18,9 +18,16 @@
         "banner_subheading": "Shop All Our New Markdowns",
         "banner_subheading_url": "/"
       }
+    },
+    "image_KL7YpW": {
+      "type": "image",
+      "settings": {
+        "main_image": "shopify://shop_images/tuf-psu.jpg"
+      }
     }
   },
   "order": [
-    "banner"
+    "banner",
+    "image_KL7YpW"
   ]
 }
