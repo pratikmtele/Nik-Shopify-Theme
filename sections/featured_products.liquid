@@ -1,0 +1,18 @@
+<section id="featured-product">
+  <h1 id="featured-product-heading">Featured Products</h1>
+  {% for product in collections['Featured Products'].products %}
+    {% render 'product_card', product: product %}
+  {% endfor %}
+</section>
+
+{% schema %}
+{
+  "name": "Featured Products",
+  "settings": [],
+  "presets": [
+    {
+      "name": "featured_products"
+    }
+  ]
+}
+{% endschema %}

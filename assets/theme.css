@@ -92,6 +92,7 @@ body {
 
 .header-middle-section .menu-items:hover {
   background-color: #f4f4f4;
+  border-radius: 5px;
 }
 
 .header-middle-section .menu-item:hover {
@@ -195,4 +196,14 @@ body {
 
 #main-image-section img {
   object-position: center;
+}
+
+/*
+*
+**   FEATURED PRODUCTS
+*
+*/
+
+#featured-product {
+  padding: 0px 20px;
 }

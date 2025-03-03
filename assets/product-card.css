@@ -1,0 +1,58 @@
+.product-card {
+    border: 1px solid gray;
+    width: fit-content;
+    margin: 5px;
+    height: fit-content;
+    padding: 5px;
+}
+
+.product-card .product-info {
+    margin-top: -10px;
+}
+
+.product-info a {
+    text-decoration: none;
+}
+
+.product-info h1 {
+    font-size: 18px;
+    color: black;
+}
+
+.product-card .buttons {
+    min-width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+.buttons .btn {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.buttons .view-btn {
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.buttons .view-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.buttons .add-to-cart-btn {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.buttons .add-to-cart-btn:hover {
+    background-color: black;
+    color: white;
+}
