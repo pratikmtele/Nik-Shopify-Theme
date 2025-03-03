@@ -1,0 +1,23 @@
+<section id="featured-product">
+  <h1 id="featured-product-heading">Featured Products</h1>
+  {% assign featured_collection = collections['Featured Products'] %}
+  {% if featured_collection and featured_collection.products.size > 0 %}
+    {% for product in featured_collection.products %}
+      {% render 'product_card', product: product %}
+    {% endfor %}
+  {% else %}
+    <p>No featured products found.</p>
+  {% endif %}
+</section>
+
+{% schema %}
+{
+  "name": "Featured Products",
+  "settings": [],
+  "presets": [
+    {
+      "name": "featured_products"
+    }
+  ]
+}
+{% endschema %}

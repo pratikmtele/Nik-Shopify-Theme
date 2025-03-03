@@ -1,6 +1,11 @@
 <section id="banner">
-  <p>Hello This is Banner Text</p>
-  <a href="#">Shop All Our New Markdowns</a>
+  {% if section.settings.banner_heading != blank %}
+    <p>{{ section.settings.banner_heading }}</p>
+  {% endif %}
+
+  {% if section.settings.banner_subheading != blank %}
+    <a href="{{ section.settings.banner_subheading_url }}">{{ section.settings.banner_subheading }}</a>
+  {% endif %}
 </section>
 
 <style>
@@ -29,6 +34,24 @@
       "id": "banner_padding",
       "default": 1,
       "unit": "px"
+    },
+    {
+      "type": "text",
+      "id": "banner_heading",
+      "label": "Banner Heading",
+      "default": "Heading is here"
+    },
+    {
+      "type": "text",
+      "id": "banner_subheading",
+      "label": "Banner Sub-Heading",
+      "default": "Hyperlink text is here"
+    },
+    {
+      "type": "url",
+      "id": "banner_subheading_url",
+      "label": "Banner Sub-Heading Link",
+      "default": "/"
     }
   ],
   "presets": [
